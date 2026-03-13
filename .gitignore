@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.idea/
+logs/
+runtime_state/
+weibo_images/
+photos_face/
+young_women/
+chrome_user_data/
+*.csv
+.env
+config.local.json
+config.json

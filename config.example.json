@@ -1,0 +1,59 @@
+{
+  "weibo": {
+    "containerid": "${WEIBO_CONTAINERID}",
+    "luicode": "${WEIBO_LUICODE}",
+    "lfid": "${WEIBO_LFID}",
+    "headers": {
+      "authority": "m.weibo.cn",
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7",
+      "dnt": "1",
+      "mweibo-pwa": "1",
+      "referer": "https://m.weibo.cn/p/index",
+      "sec-ch-ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "${WEIBO_USER_AGENT}",
+      "x-requested-with": "XMLHttpRequest",
+      "x-xsrf-token": "${WEIBO_XSRF_TOKEN}"
+    },
+    "cookies": {
+      "_T_WM": "${WEIBO_COOKIE_T_WM}",
+      "WEIBOCN_FROM": "${WEIBO_COOKIE_WEIBOCN_FROM}",
+      "SUB": "${WEIBO_COOKIE_SUB}",
+      "XSRF-TOKEN": "${WEIBO_COOKIE_XSRF}"
+    },
+    "proxies": {
+      "http": null,
+      "https": null
+    }
+  },
+  "runtime": {
+    "pages": "${RUNTIME_PAGES}",
+    "interval": "${RUNTIME_INTERVAL}",
+    "threshold": "${RUNTIME_THRESHOLD}",
+    "sleep_seconds_between_pages": "${RUNTIME_SLEEP_SECONDS}"
+  },
+  "paths": {
+    "csv_file": "weibo_posts.csv",
+    "output_root": "weibo_images",
+    "face_output_dir": "photos_face",
+    "young_women_output_dir": "young_women",
+    "state_dir": "runtime_state",
+    "download_record_file": "runtime_state/downloaded_images.csv",
+    "log_dir": "logs",
+    "log_file": "logs/pipeline.log",
+    "model_path": "classification/face_classifier.pth"
+  },
+  "llm_recognition": {
+    "enabled": "${LLM_ENABLED}",
+    "api_key": "${LLM_API_KEY}",
+    "base_url": "${LLM_BASE_URL}",
+    "model": "${LLM_MODEL}",
+    "batch_size": "${LLM_BATCH_SIZE}",
+    "max_tokens": "${LLM_MAX_TOKENS}"
+  }
+}
