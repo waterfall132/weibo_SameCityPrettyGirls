@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
+
 微博同城图片筛选项目
 Weibo Local Image Filtering Project (Sanitized GitHub Release)
 
