@@ -3,7 +3,7 @@ Weibo Local Image Filtering Project
 
 [中文说明在前 / English follows below]
 
-
+![Chat Screenshot 2](example.png)
 # 中文说明
 
 ## 1. 项目简介
